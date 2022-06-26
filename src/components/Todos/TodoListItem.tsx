@@ -48,7 +48,7 @@ function TodoListItem({ todo }: TodoListItemProps) {
   return (
     <li className="flex items-center gap-3 rounded-lg border border-gray-500 bg-gray-500 p-6 transition-colors">
       <input
-        className="checked:hover-border-purple h-6 w-6 shrink-0 cursor-pointer appearance-none self-start rounded-full bg-[url('src/assets/check.svg')] bg-[length:14px_14px] bg-center bg-no-repeat p-2 transition-colors checked:border-purpleDark checked:bg-purpleDark hover:cursor-pointer checked:hover:bg-purple"
+        className={`checked:hover-border-purple h-6 w-6 shrink-0 cursor-pointer appearance-none self-start rounded-full bg-[url('/assets/check.svg')] bg-[length:14px_14px] bg-center bg-no-repeat p-2 transition-colors checked:border-purpleDark checked:bg-purpleDark hover:cursor-pointer checked:hover:bg-purple`}
         id={htmlFor}
         type="checkbox"
         checked={todo.isDone}
