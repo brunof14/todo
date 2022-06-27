@@ -31,7 +31,7 @@ function FormTodo() {
       />
       <button
         type="submit"
-        className="flex h-[3.25rem] items-center gap-2 rounded-lg bg-blueDark px-4 text-gray-100 transition-colors hover:bg-blue"
+        className="flex h-[3.25rem] items-center justify-center gap-2 rounded-lg bg-blueDark px-4 text-gray-100 transition-colors hover:bg-blue"
       >
         Criar
         <PlusCircle size={16} />
