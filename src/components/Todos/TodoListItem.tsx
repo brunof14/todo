@@ -38,6 +38,7 @@ function TodoListItem({ todo }: TodoListItemProps) {
         <button
           onClick={handleClick}
           className="self-start rounded p-1 text-gray-300 transition-colors hover:bg-gray-400 hover:text-danger"
+          aria-label="Remove todo"
         >
           <Trash size={24} />
         </button>
@@ -64,6 +65,7 @@ function TodoListItem({ todo }: TodoListItemProps) {
       <button
         onClick={handleClick}
         className="self-start rounded p-1 text-gray-300 transition-colors hover:bg-gray-400 hover:text-danger"
+        aria-label="Remove todo"
       >
         <Trash size={24} />
       </button>
