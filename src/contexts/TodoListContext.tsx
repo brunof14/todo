@@ -18,18 +18,10 @@ interface TodoListProviderProps {
 }
 
 export function TodoListProvider({ children }: TodoListProviderProps) {
-  const [todos, setTodos] = useState<Array<Todo>>([]);
   const todosStorage = useTodoListStorage();
+  const [todos, setTodos] = useState<Array<Todo>>(todosStorage.load());
 
   useEffect(() => {
-    setTodos(todosStorage.load());
-  }, []);
-
-  useEffect(() => {
-    if (todos.length === 0) {
-      return;
-    }
-
     todosStorage.save(todos);
   }, [todos]);
 
